@@ -1,0 +1,49 @@
+function ClassSing(R,f)
+
+A:=BaseRing(R);
+d:=Degree(f);
+dd:=Numerator(d/2);
+PP<x,y,z,w>:=WeightedProjectiveSpace(A,[1,1,1,dd]);
+
+ff:=w^2-Evaluate(f,[x,y,z]);
+S:=Surface(PP,ff);
+SingS:=SingularSubscheme(S);
+//assert Dimension(SingS) eq 0;
+if not Dimension(SingS) eq 0 then
+	return("The singular locus of the given projective curve has dimension greater than 0. In particular, there are non-ADE singularities. Make sure that the defining polynomial does not contain any squares.");
+end if;
+
+Sx:=AffinePatch(S,4);
+SxSP:=SingularPoints(Sx);
+for P in SxSP do
+	//P;
+	if not IsSimpleSurfaceSingularity(P) then
+		return("The given projective curve has at least one non-ADE singularitiy.");
+	end if;
+end for;
+
+
+
+Sy:=AffinePatch(S,3);
+SySP:=SingularPoints(Sy);
+for P in SySP do
+	//P;
+	if not IsSimpleSurfaceSingularity(P) then
+		return("The given projective curve has at least one non-ADE singularitiy.");
+	end if;
+end for;
+
+Sz:=AffinePatch(S,2);
+SzSP:=SingularPoints(Sz);
+for P in SzSP do
+	 //P;
+	 if not IsSimpleSurfaceSingularity(P) then
+		return("The given projective curve has at least one non-ADE singularitiy.");
+	end if;
+end for;
+
+
+
+return("All singularities of the given projective curve are ADE singularities.");
+
+end function;  
