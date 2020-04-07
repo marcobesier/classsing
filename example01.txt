@@ -1,7 +1,23 @@
+// Define basefield.
+QQ:=Rationals();
 
-> QQ:=Rationals();
-> F<a>:=ext<QQ|[Polynomial([-5,0,1])]>;
-> K<x,y,z>:=PolynomialRing(F,3);
-> f:=(-y*(4*z*(z+y)-x*y))*(y^2*(x-4*z)+z*x*(z-2*y));
-> ClassSing(K,f);
-The given projective curve has at least one non-ADE singularitiy.
+// Adjoin a:=sqrt(5) to QQ.
+F<a>:=ext<QQ|[Polynomial([-5,0,1])]>;
+
+/*
+   Define the ring of polynomials (in three variables x, y, z and with
+   coefficients in F) as the basering.
+*/
+
+K<x,y,z>:=PolynomialRing(F,3);
+
+// Enter defining polynomial of projective curve
+f:=(-y*(4*z*(z+y)-x*y))*(y^2*(x-4*z)+z*x*(z-2*y));
+
+// Call ClassSing to check whether all singularities are simple.
+ClassSing(K,f);
+
+/*
+   The output should read: "The given projective curve has at least
+   one non-ADE singularitiy."
+*/
