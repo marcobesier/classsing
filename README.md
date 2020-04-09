@@ -12,6 +12,9 @@
 
 To use ClassSing, simply copy the content of classsing.txt into an open MAGMA session. Once defined, you can use the ClassSing function as follows:
 
+1. Fix the basefield to be the field of rational numbers.
+`QQ:=Rationals();`
+
 ## License
 
 `ClassSing`is released under the [GNU General Public License 3](http://www.gnu.org/licenses/gpl-3.0.html).
