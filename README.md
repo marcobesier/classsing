@@ -10,10 +10,15 @@
 
 ## Usage
 
-To use ClassSing, simply copy the content of classsing.txt into an open MAGMA session. Once defined, you can use the ClassSing function as follows:
+To use ClassSing, simply copy the content of classsing.txt into an open MAGMA session. Once the function is defined, you can use it as follows:
 
 1. Fix the basefield to be the field of rational numbers.
+
 `QQ:=Rationals();`
+
+2. If some of the singular-point coordinates of the given curve contain irrational numbers, adjoin thes irrationalities to the basefield. For example, if a:=sqrt(5) is such an irrationality, you can adjoin it to the basefield via
+
+`F<a>:=ext<QQ|[Polynomial([-5,0,1])]>;`
 
 ## License
 
