@@ -24,6 +24,10 @@ To use `ClassSing`, simply copy the content of classsing.txt into an open MAGMA 
 
     `K<x,y,z>:=PolynomialRing(F,3);`
 
+4. Enter the defining polynomial of the projective curve. Example:
+
+    `f:=(-y*(4*z*(z+y)-x*y))*(y^2*(x-4*z)+z*x*(z-2*y));`
+
 ## License
 
 `ClassSing`is released under the [GNU General Public License 3](http://www.gnu.org/licenses/gpl-3.0.html).
