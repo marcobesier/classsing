@@ -28,6 +28,10 @@ To use `ClassSing`, simply copy the content of classsing.txt into an open MAGMA 
 
     `f:=(-y*(4*z*(z+y)-x*y))*(y^2*(x-4*z)+z*x*(z-2*y));`
 
+5. Call the ClassSing function.
+
+    `ClassSing(K,f)`
+
 ## License
 
 `ClassSing`is released under the [GNU General Public License 3](http://www.gnu.org/licenses/gpl-3.0.html).
