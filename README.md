@@ -30,7 +30,7 @@ To use `ClassSing`, simply copy the content of classsing.txt into an open MAGMA 
 
 5. Call the ClassSing function.
 
-    `ClassSing(K,f)`
+    `ClassSing(K,f);`
 
 ## License
 
