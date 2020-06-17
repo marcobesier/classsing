@@ -1,7 +1,5 @@
 # ClassSing
 
-*Note: I'm currently updating this README on a regular basis. Nevertheless, the code of the function didn't change yet and the relevant sections of my PhD thesis are still perfectly valid.*
-
 ## What's ClassSing?
 
 `ClassSing` is a [MAGMA](http://magma.maths.usyd.edu.au/magma/) function that checks whether all singularities of a given projective algebraic curve are ADE singularities.
