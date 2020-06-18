@@ -40,6 +40,6 @@ To use `ClassSing`, simply copy the content of classsing.txt into an open MAGMA 
 
 `ClassSing`is released under the [GNU General Public License 3](http://www.gnu.org/licenses/gpl-3.0.html).
 
-## Authors
+## Contributors
 
-Marco Besier, Dino Festi
+[Marco Besier](https://www.marcobesier.com), [Dino Festi](https://www.staff.uni-mainz.de/dfesti/)
