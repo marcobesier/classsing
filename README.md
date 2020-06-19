@@ -8,10 +8,6 @@
 
 [MAGMA](http://magma.maths.usyd.edu.au/magma/) has a built-in function to check whether all singularities of a given _surface_ are of ADE type, but lacks a similar function for algebraic curves. The `ClassSing`function fills this surprising gap.
 
-## A Note For Readers of the Ph.D. Thesis
-
-The way ClassSing is explained in my Ph.D. thesis still applies to the current version of the function. All explanations that are given below are also contained in the thesis so there is no need for you to read on. 🙂
-
 ## Usage
 
 To use `ClassSing`, simply copy the content of classsing.txt into an open MAGMA session. Once the function is defined, you can use it as follows:
